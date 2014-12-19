@@ -5,9 +5,6 @@
   "main": "src/htmln.js",
   "author": "Kurt Ruppel <me@kurtruppel.com>",
   "license": "WTFPL",
-  "dependencies": {
-    "simple-html-tokenizer": "git://github.com/tildeio/simple-html-tokenizer"
-  },
   "devDependencies": {
     "karma": "^0.12.28",
     "karma-cli": "0.0.4",
