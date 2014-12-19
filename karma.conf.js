@@ -3,6 +3,7 @@ module.exports = function(config) {
     frameworks: ['mocha', 'chai'],
     files: [
       'test/fixtures/**/*.html',
+      'vendor/simple-html-tokenizer.js',
       'src/**/*.js',
       'test/**/*_spec.js'
     ],
