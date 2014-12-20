@@ -1,12 +1,12 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(['simple-html-tokenizer'], factory);
+    define(['simple-html-tokenizer', 'htmlparser'], factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory(require('simple-html-tokenizer'));
+    module.exports = factory(require('simple-html-tokenizer'), require('htmlparser'));
   } else {
-    root.htmln = factory(root.HTML5Tokenizer);
+    root.htmln = factory(root.HTML5Tokenizer, root.Tautologistics.NodeHtmlParser);
   }
-}(this, function(HTML5Tokenizer) {
+}(this, function(HTML5Tokenizer, HTMLParser) {
   var INLINE_TAGS = ['title', 'p', 'span', 'button'];
 
   function indent(size) {
